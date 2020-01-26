@@ -1,39 +1,27 @@
 # LedPythonArduino
-Python 2.7
 
-#Vi num tutorial e resolvi duplicar e testar um timer
-Link Tutorial: http://www.potilivre.org/hudsonbrendon/383-controlando-o-arduino-com-python
+### Utilizado
 
-Pra fazer funcionar
-#Teste no Windows
+* Python 2.7 ou 3(Depende mais do que você utiliza)
+* Arduino IDE
+* Lib do python: Pyserial
 
-Instale um Python 2.7
-https://www.python.org/downloads/release/python-2714/
+### Link
 
-Adicione a biblioteca pyserial
-https://pypi.python.org/pypi/pyserial/2.7
-#Instale o que preferir
+Vi num tutorial e resolvi duplicar e testar um timer
 
-Com isso pronto para testar:
+Link: http://www.potilivre.org/hudsonbrendon/383-controlando-o-arduino-com-python
 
-#Para fazer o arduino estar no ponto de bala, conecte um LED na porta GND e 13, sendo o 'Pé' maior no 13
+### Para fazer funcionar:
 
-Execute o script arduino Uno na sua IDE e pronto(Grave no Arduino):
+* Monte o arduino com o led ligado na porta 13 e no GND(Pé maior do led na porta 13)
+* Grave o script arduino no equipamento
+* Instale as libs no Python 2 ou 3(depende de você)
+* Execute o python
 
-#Agora vamos para o Python 2.7
-Teste assim:
+### Teste 
 
-#No linux a porta COM3 é outra, tem que procurar qual é a porta
--import serial
--conexao = serial.Serial('COM3', 9600)
-
-#Para garantir que a conexao funciona teste
--conexao.isOpen()
-#Se der True que dizer que ta certo
-
-#Para fazer o LED acender use:
--conexao.write('1')
-#Para apagar o LED:
--conexao.write('2')
-
-#Agora só brincar
+* No linux a porta COM3 é outra, tem que procurar qual é a porta, você tem que procurar onde o arduino é montado
+* Montado a porta: conexao = serial.Serial('COM3', 9600)
+* Para garantir que a conexao funciona use o comando: conexao.isOpen(), se sair um True de resultado, está funcionando
+* Para fazer acender ou apagar, só altere os valores aqui: conexao.write('1')
