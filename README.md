@@ -23,5 +23,5 @@ Link: http://www.potilivre.org/hudsonbrendon/383-controlando-o-arduino-com-pytho
 
 * No linux a porta COM3 é outra, tem que procurar qual é a porta, você tem que procurar onde o arduino é montado
 * Montado a porta: conexao = serial.Serial('COM3', 9600)
-* Para garantir que a conexao funciona use o comando: conexao.isOpen(), se sair um True de resultado, está funcionando
-* Para fazer acender ou apagar, só altere os valores aqui: conexao.write('1')
+* Para garantir que a conexao funciona use o comando(Se der true, ta funcionando): conexao.isOpen()
+* Para fazer acender ou apagar, só altere os valores aqui: conexao.write('<valor>')
